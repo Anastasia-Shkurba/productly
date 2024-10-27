@@ -7,28 +7,69 @@ body {
     list-style: none;
     padding: 0;
 
-      a {
-        text-decoration: none;
-        color: #2F281E;
-      }
+    a {
+      text-decoration: none;
+      color: #2F281E;
+    }
+  }
+}
+
+header {
+  /* max-width: 1400px; */
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+
+  .logo {
+    margin: 42px 320px 24px 143px;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    gap: 21px;
+    margin: 44px 0 26px;
+
+    li {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
     }
   }
 
-header {
-  max-width: 1400px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-
-  .logo {
-    margin: 22px 0 24px;
+  .menu {
+    display: flex;
+    gap: 53px;
   }
 
-  li {
-    display: inline-block;
-    padding: 11px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
+  .buttons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin: 35px 145px 17px 0;
+
+    button {
+      padding: 10px 23px;
+      cursor: pointer;
+      /* width: 110px; */
+      /* height: 46px; */
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: #173A56;
+      background-color: #fff;
+      border: #BCD0E5 2px solid;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+      &:last-child {
+        color: #fff;
+        background-color: #FF9900;
+        border: #FF9900 2px solid;
+      }
+
+    }
   }
+
 }
