@@ -71,5 +71,62 @@ header {
 
     }
   }
+}
 
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin: 30px auto 110px;
+  max-width: 1126px;
+
+  .text {
+    margin: 83px 0 83px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+      color: #2F281E;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #544837;
+      max-width: 458px;
+      margin: 30px 60px 45px 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 30px;
+
+      button {
+        padding: 11px 40px;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background-color: #FF9900;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:last-child {
+          color: #FF9900;
+          background-color: transparent;
+          border: none;
+          text-decoration: underline;
+          font-weight: 600;
+
+          &::before {
+            content: "";
+          }
+        }
+      }
+    }
+  }
 }
