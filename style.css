@@ -3,32 +3,49 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 
+  .container {
+    max-width: min(1110px, 100vw - 140px);
+    margin: auto;
+  }
+
   ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 
     a {
       text-decoration: none;
       color: #2F281E;
     }
   }
+
+  h2, p {
+    margin: 0;
+  }
+
+  button {
+    white-space: nowrap;
+  }
 }
 
 header {
-  /* max-width: 1400px; */
+  align-items: center;
   display: flex;
-  margin: auto;
-  justify-content: space-between;
+  gap: 53px;
+  height: 118px;
+
 
   .logo {
-    margin: 42px 320px 24px 143px;
     cursor: pointer;
+  }
+
+  nav {
+    margin-left: auto;
   }
 
   ul {
     display: flex;
     gap: 21px;
-    margin: 44px 0 26px;
 
     li {
       display: inline-block;
@@ -38,35 +55,26 @@ header {
     }
   }
 
-  .menu {
-    display: flex;
-    gap: 53px;
-  }
-
   .buttons {
     display: flex;
     gap: 14px;
     align-items: center;
-    margin: 35px 145px 17px 0;
 
     button {
       padding: 10px 23px;
       cursor: pointer;
-      /* width: 110px; */
-      /* height: 46px; */
       font-family: "Poppins", sans-serif;
       font-weight: 600;
       font-size: 16px;
       color: #173A56;
       background-color: #fff;
-      border: #BCD0E5 2px solid;
+      border: #BCD0E5 1px solid;
       border-radius: 4px;
-      box-sizing: border-box;
 
       &:last-child {
         color: #fff;
         background-color: #FF9900;
-        border: #FF9900 2px solid;
+        border: #FF9900 1px solid;
       }
 
     }
@@ -75,19 +83,22 @@ header {
 
 .hero {
   display: flex;
-  justify-content: center;
-  gap: 3px;
-  margin: 30px auto 110px;
-  max-width: 1126px;
+  gap: 63px;
+  min-height: 570px;
+  padding: 10px 0 65px;
+  
+  img {
+    margin-right: -16px;
+  }
 
   .text {
-    margin: 83px 0 83px;
 
     h2 {
       font-weight: 700;
       font-size: 44px;
       line-height: 54px;
       color: #2F281E;
+      margin-top: 83px;
     }
 
     p {
@@ -95,13 +106,12 @@ header {
       font-size: 18px;
       line-height: 28px;
       color: #544837;
-      max-width: 458px;
-      margin: 30px 60px 45px 0;
+      margin: 30px 0 45px;
     }
 
     .buttons {
       display: flex;
-      gap: 30px;
+      gap: 15px;
 
       button {
         padding: 11px 40px;
@@ -116,6 +126,7 @@ header {
         cursor: pointer;
 
         &:last-child {
+          position: relative;
           color: #FF9900;
           background-color: transparent;
           border: none;
@@ -123,7 +134,11 @@ header {
           font-weight: 600;
 
           &::before {
-            content: "";
+            content: "▶";
+            position: absolute;
+            left: 12px;
+            font-size: 23px;
+            top: 7px;
           }
         }
       }
